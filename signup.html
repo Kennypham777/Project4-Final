@@ -31,8 +31,22 @@
             </select>
             <br>
             <button type="submit">Register</button>
-        </form>
+        </form>    
     </div>
-    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.querySelector("form");
+            const password = document.getElementById("password");
+            const confirmPassword = document.getElementById("confirmpassword");
+            
+            form.addEventListener("submit", (event) => {
+                if (password.value !== confirmPassword.value) {
+                    alert("Passwords do not match!");
+                    event.preventDefault(); 
+                }
+            });
+        });
+    </script>    
 </body>
 </html>
