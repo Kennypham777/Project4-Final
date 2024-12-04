@@ -1,5 +1,5 @@
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(209, 209, 209);
     margin: 0;
     padding: 0;
@@ -23,11 +23,17 @@ input {
 }
 h2 {
     font-weight: bolder;
+    margin-bottom: -10px;
+    color:rgb(68, 68, 68);
+}
+p {
+    color: grey;
 }
 button {
     margin-top: 15px;
     padding: 10px 20px;
     background-color: #439e81;
+    font-weight: bolder;
     color: white;
     border: none;
     border-radius: 5px;
@@ -37,7 +43,7 @@ button:hover {
     background-color: #2e7760;
 }
 .container {
-    top: -15%;
+    top: -5%;
     position: relative;
     width: auto;
     max-width: 350px;
