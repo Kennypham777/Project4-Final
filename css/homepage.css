@@ -1,0 +1,92 @@
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header bar styling */
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292929;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    border: 2px solid #fff;
+    background-color: #444;
+}
+
+/* Main content styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border-left: 6px solid #439e81; 
+    border-right: 6px solid #439e81;
+}
+
+h1, h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Call-to-action button */
+.cta-button {
+    display: inline-block;
+    background-color: #439e81;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    left: 49%; transform: translateX(-50%);
+}
+.cta-button:hover {
+    background-color: #2e7760;
+}
+
+.highlight {
+    color: #2e7760; /* A different color, e.g., blue */
+    font-weight: bold; /* Optional to make it stand out */
+}
