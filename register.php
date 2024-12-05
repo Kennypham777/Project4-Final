@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$user = "kpham32";
-$pass = "kpham32";
-$dbname = "kpham32";
+$user = "tvo72";
+$pass = "tvo72";
+$dbname = "tvo72";
 
 // Database connection
 $conn = new mysqli($host, $user, $pass, $dbname);
@@ -59,8 +59,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt->bind_param("ssss", $username, $email, $hashed_password, $usertype);
 
     if ($stmt->execute()) {
-        echo "Registration successful! Redirecting to login page...";
-        header("Refresh: 3; URL=login.html");
+         // Get the user ID of the newly registered user
+         $userID = $conn->insert_id;
+         // Store user ID in session
+        session_start();
+        $_SESSION['userID'] = $userID;
+        
+        echo "Registration successful! Redirecting to payment page...";
+        header("Refresh: 3; URL=creditcard.html");
     } else {
         echo "Error: " . $stmt->error;
     }
