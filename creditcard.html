@@ -21,7 +21,9 @@
             <label for="cardNumber">Credit Card Number</label>
             <input type="text" name="cardNumber" id="cardNumber" placeholder="Enter card number" required>
             </div>
-            <div class="card-type-display" name="cardTypeDisplay" id="cardTypeDisplay"></div>
+            <div class="card-type-display" id="cardTypeDisplay"></div>
+            <!--hidden input to store cardType-->
+            <input type="hidden" id="cardType" name="cardType">
     
             <div class="form-field">
             <label for="expirationDate">Expiration Date</label>
@@ -86,8 +88,11 @@
         document.getElementById("cardNumber").addEventListener("input", (event) => {
             const cardNumber = event.target.value.replace(/\s+/g, "");
             const cardType = detectCardType(cardNumber);
+            //update card type display
             const cardTypeDisplay = document.getElementById("cardTypeDisplay");
             cardTypeDisplay.textContent = cardType ? `Card Type: ${cardType}` : "";
+            //update hidden card type
+            document.getElementById("cardType").value = cardType;
         });
     </script>
 </body>

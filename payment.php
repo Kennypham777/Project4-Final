@@ -40,7 +40,7 @@ if ($conn->query($sql) === FALSE) {
 //check if form is submitted 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = trim($_POST['name']);
-    $cardType = trim($_POST['cardTypeDisplay']);
+    $cardType = trim($_POST['cardType']);
     $cardNumber = trim($_POST['cardNumber']);
     $expirationDate = trim($_POST['expirationDate']) . "-01";
     $coupon = isset($_POST['coupon']) ? trim($_POST['coupon']) : null;
