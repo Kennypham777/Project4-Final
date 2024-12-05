@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: lightyellow;
+}
+div{
+    border: 2px solid yellow;
+    border-radius: 10px;
+    background-color: azure;
+    box-shadow: 3px 3px yellow;
+    text-align: center;
+    padding: 20px;
+}
+h3{
+    text-decoration: underline;
+}
+a{
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
