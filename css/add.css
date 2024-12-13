@@ -15,7 +15,7 @@ body {
 /* Page Title */
 h1 {
     font-size: 2rem;
-    color: #4a90e2;
+    color: #439e81;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -57,7 +57,7 @@ input[type="file"] {
 input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="file"]:focus {
-    border-color: #4a90e2;
+    border-color: #439e81;
     outline: none;
 }
 
@@ -68,7 +68,7 @@ input[type="checkbox"] {
 
 /* Submit Button */
 input[type="submit"] {
-    background-color: #4a90e2;
+    background-color: #439e81;
     color: white;
     font-weight: bold;
     padding: 12px;
@@ -81,7 +81,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #357abf;
+    background-color: #2e7760;
 }
 
 /* Responsive Design */

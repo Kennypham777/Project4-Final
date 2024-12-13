@@ -39,11 +39,14 @@ $conn->close();
 <body>
 <div class="dashboard">
         <h1>Welcome to your Dashboard</h1>
+        <form action="logout.php" method="POST">
+            <button type="submit" class="logout-button">Logout</button>
+        </form>
 
 <div class="property-list">
     <!-- Always show the Add Property Card at the top -->
     <a href="add_property_form.php" class="property-card add-property-card" style="z-index: 10; position: relative; background-color: grey;">
-    <div class="add-property-symbol" style="font-size: 5em; color: red; text-align: center;">
+    <div class="add-property-symbol" style="font-size: 5em; color: #439e81; text-align: center;">
         <span>+</span>
     </div>
     <div class="property-details">
