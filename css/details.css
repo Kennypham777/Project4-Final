@@ -1,0 +1,130 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and page setup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main container for property details page */
+.property-details-page {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image styling */
+.property-image {
+    width: 100%; /* Adjust to your needs, or set a max-width */
+    max-width: 500px; /* Limit the maximum width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensure it starts on its own line */
+    margin: 0 auto 20px; /* Center the image horizontally and add spacing below */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+}
+
+/* Text section */
+.details-overlay {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.details-overlay h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.details-overlay p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.details-overlay p strong {
+    color: #f8c101;
+}
+
+/* Price styling */
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f8c101;
+    margin-bottom: 20px;
+}
+
+/* Add a back button or other navigation */
+.details-overlay a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.details-overlay a:hover {
+    background-color: #0056b3;
+}
+
+
+/* Style for the Edit and Delete buttons */
+.btn-edit, .btn-delete {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn-edit:hover {
+    background-color: #0056b3;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+.btn-return-dashboard {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-return-dashboard:hover {
+    background-color: #45a049;
+}

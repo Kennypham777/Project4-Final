@@ -2,9 +2,9 @@
 session_start();
 
 $host = "localhost";
-$user = "tvo72";
-$pass = "tvo72";
-$dbname = "tvo72";
+$user = "momer3";
+$pass = "momer3";
+$dbname = "momer3";
 
 // Database connection
 $conn = new mysqli($host, $user, $pass, $dbname);
@@ -38,11 +38,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             // Redirect based on usertype
             if ($usertype === 'seller') {
-                header("Location: dashboard.html");
+                header("Location: dashboard.php");
             } elseif ($usertype === 'buyer') {
-                header("Location: dashboard.html");
+                header("Location: dashboard.php");
             } elseif ($usertype === 'admin') {
-                header("Location: dashboard.html");
+                header("Location: dashboard.php");
             } else {
                 header("Location: login.html"); // usertype invaild redirect
             }

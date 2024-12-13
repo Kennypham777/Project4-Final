@@ -1,0 +1,75 @@
+/* Edit Property Form Styles */
+form {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="checkbox"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #007BFF;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
