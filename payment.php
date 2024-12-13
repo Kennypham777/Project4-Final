@@ -1,8 +1,9 @@
 <?php
 $host = "localhost";
-$user = "momer3";
-$pass = "momer3";
-$dbname = "momer3";
+$user = "tvo72";
+$pass = "tvo72";
+$dbname = "tvo72";
+
 
 // Start the session to retrieve the logged-in user's ID
 session_start();
