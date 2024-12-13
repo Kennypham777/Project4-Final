@@ -2,9 +2,9 @@
 session_start();
 
 $host = "localhost";
-$user = "tvo72";
-$pass = "tvo72";
-$dbname = "tvo72";
+$user = "momer3";
+$pass = "momer3";
+$dbname = "momer3";
 
 // Database connection
 $conn = new mysqli($host, $user, $pass, $dbname);
